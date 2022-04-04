@@ -1,0 +1,100 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.hk-reset--button {
+  background: none;
+  border: 0;
+}
+
+.hk-left {
+  float: left;
+}
+
+.hk-right {
+  float: right;
+}
+
+.hk-calendar {
+  border-collapse: collapse;
+  font-family: "Roboto";
+  table-layout: fixed;
+  text-align: center;
+}
+.hk-calendar__caption, .hk-calendar__day {
+  padding: .875em;
+}
+.hk-calendar__days {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hk-calendar__day {
+  color: #666;
+  font-weight: 300;
+  width: 14.2857142857%;
+}
+.hk-calendar__date-link {
+  border: 1px solid transparent;
+  color: #222;
+  display: block;
+  font-weight: 400;
+  padding: 1em .875em;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+.hk-calendar__date-link:hover, .hk-calendar__date-link:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.hk-calendar__date-link.-disabled {
+  border-color: transparent;
+  color: #aaa;
+  cursor: default;
+  font-weight: 300;
+}
+.hk-calendar__date-link.-has-event::after {
+  color: #2c8ac8;
+  content: "*";
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 0;
+  position: relative;
+  top: .35em;
+}
+
+.event_class{
+  display: none;
+}
+
+#month_year_p{
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+#next_moth:focus, #prev_month:focus{
+    color: seagreen;
+    outline: none !important;
+}
+
+.next-month, .next-month:hover, .next-month:focus{
+    border-color: transparent !important;
+    border: none !important;
+    color: #aaa;
+    cursor: default;
+    font-weight: 300;
+}
+
+.previous-month, .previous-month:hover, .previous-month:focus{
+    border-color: transparent !important;
+    border: none !important;
+    color: #aaa;
+    cursor: default;
+    font-weight: 300;
+}

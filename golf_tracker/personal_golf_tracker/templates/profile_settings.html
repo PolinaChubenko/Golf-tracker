@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <form novalidate class="form-container" id="udata_changer">
+                    <h5 class="card-title" style="color: #207f2e;">Изменить данные о себе</h5>
+                    <div class="input-container__single" style="margin-bottom: 3px;">
+                        <label for="name">Имя Фамилия:</label>
+                        <input class="change_inputs" autocomplete="off" type="text" required name="name" id="name" />
+                    </div>
+                    <div class="input-container__single" style="margin-bottom: 3px;">
+                        <label for="date_birth">Дата рождения:</label>
+                        <input class="change_inputs" type="date" required name="date_birth" id="date_birth" />
+                    </div>
+                    <div class="input-container__single" style="margin-bottom: 3px;">
+                        <label for="name">Город:</label>
+                        <input class="change_inputs" autocomplete="off" type="text" required name="location" id="location" />
+                    </div>
+                    <div class="input-container__single" style="margin-bottom: 3px;">
+                        <label for="name">Гандикап:</label>
+                        <input class="change_inputs" autocomplete="off" type="number" required name="hpc" id="hpc" />
+                    </div>
+                        <button class="save_avatar" onclick="set_udata();">Сохранить</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-body" style="text-align: center;">
+                <h5 class="card-title" style="color: #207f2e;">Изменить статус</h5>
+                <div class="input-container__single">
+                    <label for="name">Статус:</label>
+                    <input class="change_inputs" autocomplete="off" type="text" required name="status" id="status" />
+                </div>
+                    <button class="save_avatar" onclick="set_status();">Сохранить</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body" style="text-align: center;">
+                <h5 class="card-title" style="color: #207f2e;">Изменить аватарку</h5>
+                <!-- Upload image input-->
+                <p style="color:red">Временно не доступно :(</p>
+                <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" accept="image/*,image/jpeg">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Выберите изображение</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Выбрать</small></label>
+                    </div>
+                </div>
+                <p id="big_pic" style="color: red; text-align: center; display: none;">Ваша картинка слишком большая!</p>
+                <button class="save_avatar" onclick="pass_image();">Сохранить</button><hr>
+                <!-- Uploaded image area-->
+                <p class="font-italic text-center" style="font-size: 14px; color: #6c757d;">загруженная картинка отобразится в блоке ниже</p>
+                <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Руководство</title>
+      {% load static %}
+        <link rel="stylesheet" href={% static "css/documentation.css" %} >
+        <link rel="stylesheet" href={% static "css/bootstrap.css" %} >
+        <script src={% static "js/jquery.min.js" %} ></script>
+        <script src={% static "js/bootstrap.js" %} ></script>
+</head>
+<body>
+
+<!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3" style="background-color: white;">
+      <div class="container">
+        <img style="margin-left: -10%;" src="{% static "/imgs/logo_text.jpg"%}">
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="/main/?page=3" class="nav-link font-italic"> Домой </a></li>
+            <li class="nav-item active"><a href="/about-us/" class="nav-link font-italic"> О нас </a></li>
+            <li class="nav-item active"><a href="/login-exit/" class="nav-link font-italic"> Выйти </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-light">
+      <div class="container py-5">
+        <div class="row h-100 align-items-center py-5">
+          <div class="col-lg-6">
+            <h1 class="display-4 title" style="color: #01a678;" >Руководство пользователя</h1>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block" ><img style="height: 440px;" src="{% static "/imgs/doc_man.png"%}" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+<!-- Конец навигации -->
+
+<!-- Начало документации -->
+    <div class="bg-white py-5">
+      <div class="container py-5">
+
+        <!-- навигация -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active nav_link" id="game-tab" data-toggle="tab" href="#game" role="tab" aria-controls="game" aria-selected="true">Игры</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link nav_link" id="statistics-tab" data-toggle="tab" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">Статистика</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link nav_link" id="trainings-tab" data-toggle="tab" href="#trainings" role="tab" aria-controls="trainings" aria-selected="false">Тренировки</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link nav_link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Профиль</a>
+          </li>
+        </ul>
+        <!-- конец навигации -->
+
+        <!-- блоки -->
+        <div class="tab-content" id="myTabContent">
+          <!-- раздел игры -->
+          <div class="tab-pane fade show active" id="game" role="tabpanel" aria-labelledby="game-tab">
+              <ol>
+                  <li class="li_element">
+                      <p class="li_name">Запланировать игру из глобального списка</p>
+                      <p class="doc_text">
+                          Чтобы запланировать глобально созданную игру, Вам нужно перейти в раздел "Игры" ->
+                          "Запланировать игру" и в верхней карточке из выпадающего списка выбрать нужное вам
+                          соревнование. Так же в этой карточке будет отображена информация о сеоревновании, а именно
+                          даты и место проведения. После нажатия кнопки "добавить игру", если создание пройдет успешно,
+                          то у Вас появится уведомление, что игра была успешно создана.
+                      </p>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Запланировать свою игру</p>
+                      <p class="doc_text">
+                          Чтобы запланировать свою игру (которой нет в глобальном списке), Вам нужно в том же разделе
+                          (см. Игры пункт 1) в нижней карточке прописать название, место проведения и даты соревнования.
+                          После нажатия кнопки "добавить игру", если создание пройдет успешно, то у Вас появится
+                          уведомление, что игра была успешна создана.
+                      </p>
+                      <div class="card green text-black text-center p-3 mt-2 mb-3 hoverable" style="width: auto">
+                            <blockquote class="blockquote mb-0 card_sides">
+                                <h4 class="card-title">Совет</h4>
+                                <p>Следует писать настоящее название соревнования, а также не использовать специальных
+                                    символов, чтобы в дальнейшем Вам было удобнее ориентироваться по Вашим играм. </p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                        <cite>И нам и Вам будет удобно</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                      </div>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Мои игры</p>
+                      <p class="doc_text">
+                          Для того чтобы посмотреть все Ваши игры, Вам нужно перейти в раздел "Игры" ->
+                          "Мои игры". Там будет отображена таблица со всеми играми и некоторой информацией о них.
+                          Для быстрой навигации по играм используйте поиск.
+                      </p>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Календарь</p>
+                      <p class="doc_text">
+                          Все запланированные Вами игры так же отображаются в календаре, который находится
+                          в разделе "Игры" -> "Календарь". Если под днем недели есть синяя точка, значит в этот день
+                          есть собятия. Есил Вы наждмёте на этот день, то справа от календаря появятся карточки с
+                          подробной информацией о событиях.
+                      </p>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">В этом месяце</p>
+                      <p class="doc_text">
+                          На домашней странице в правой плашке всегда отображаются глобальные игры этого месяца.
+                          Зеленая карточка означает, что Вы уже запланировали это соревнование. Синяя - рекомендация.
+                          Если нажать на синюю карточку, то Вы переместитесь в раздел "Запланировать игру", где в
+                          селекторе глобальных соревнований уже будет выбрана эта игра. Чтобы запланировать см. Игры
+                          пункт 1.
+                      </p>
+                      <div class="card green text-black text-center p-3 mt-2 mb-3 hoverable" style="width: auto">
+                            <blockquote class="blockquote mb-0 card_sides">
+                                <h4 class="card-title">Совет</h4>
+                                <p>Лучше не только ориентироваться на анонс событий, но и заранее планировать игры
+                                    самому, чтобы заранее подготовиться и хорошо выступить.</p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                        <cite>Мы всегда рады, когда Вы побеждаете</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                      </div>
+                  </li>
+              </ol>
+          </div>
+
+          <!-- раздел статистика -->
+          <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+              <ol>
+                  <li class="li_element">
+                      <p class="li_name">Создать статистику</p>
+                      <p class="doc_text">
+                          Чтобы создать статистику по запланированной ранее, как глобальной, так и вашей, игре
+                          (см. Игры пункты 1 и 2), Вам нужно перейти
+                          в раздел "Статистика" -> "Создать статистику". Затем выберите игру из списка, выставите дату
+                          и отметьте количество лунок. В полях для ввода в таблице поддерижваются только однозначные
+                          числа. Когда все данные введены, нажмите кнопку "Сохранить статистику", если сохранение
+                          пройдет успешно, то у Вас появится уведомление, что статистика была успешно создана.
+                      </p>
+                      <div class="card orange text-black text-center p-3 mt-2 mb-3 hoverable" style="width: auto">
+                            <blockquote class="blockquote mb-0 card_sides">
+                                <h4 class="card-title">Важно</h4>
+                                <p>Имейте в виду, что статистика вводиться лишь единожды и возможности отредактировать
+                                данные нет. Поэтому настоятельно рекомендуем Вам внимательно вводить результаты игры.</p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                        <cite>Наши разработчики уже планирует добавить возможность
+                                            редактирования статистики</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                      </div>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Посмотреть статистику</p>
+                      <p class="doc_text">
+                          Посмотреть созданную статистику (см. Статистика пункт 1) можно в разделе "Статистика" ->
+                          "Моя статистика". После выбора игры у Вас появится граф с результатами по дням. После выбора
+                          дня будет построена сохраненная Вами таблица. При нажатии на кнопку "Построить диаграмму по
+                          данным таблицы" появятся дополнительные графики.
+                      </p>
+                  </li>
+              </ol>
+          </div>
+
+          <!-- раздел тренировки -->
+          <div class="tab-pane fade" id="trainings" role="tabpanel" aria-labelledby="trainings-tab">
+              <ol>
+                  <li class="li_element">
+                      <p class="li_name">Создать тренировку</p>
+                      <p class="doc_text">
+                          Чтобы создать тренировку, Вам нужно перейти в раздел "Подготовка" -> "Создать тренировку".
+                          Введите название, дату и место тренировки. Затем спланируйте задачи и добавьте их. Для
+                          добавления места ввода нажмите на зеленый плюсик.
+                          Когда все данные введены, нажмите кнопку "Добавить тренировку", если сохранение
+                          пройдет успешно, то у Вас появится уведомление, что тренировка была успешно создана.
+                      </p>
+                      <div class="card green text-black text-center p-3 mt-2 mb-3 hoverable" style="width: auto">
+                            <blockquote class="blockquote mb-0 card_sides">
+                                <h4 class="card-title">Совет</h4>
+                                <p>Рекомендуем Вам систиматизировать названия тренировок для более удобного
+                                    пользования сервисом</p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                        <cite>Порядок на столе, порядок в голове</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                      </div>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Задачи</p>
+                      <p class="doc_text">
+                          Если Вы перейдете в раздел "Тренировка" -> "Задачи", то там будут
+                          отображаться тренировки и задачи, связанные с ними (см. Тренировки пункт 1).
+                          С помощью чекбоксов отмечайте выполненные Вами задачи. При нажатии кнопки "Сохранить задачи"
+                          сохраняется состояние чекбоксов.
+                      </p>
+                  </li>
+              </ol>
+          </div>
+
+          <!-- раздел профиль -->
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <ol>
+                  <li class="li_element">
+                      <p class="li_name">Настройки профиля</p>
+                      <p class="doc_text">
+                          Чтобы настроить свой аккаунт Вам нужно перейти в настройки профиля. Для этого, в правой части
+                          сервисного окна нажмите на Вашу аватарку (или стандартну), после появления возможности
+                          выбора разделов,  необходимо нажать "Настройки". У Вас есть возможность менять Вашу аватарку,
+                          данные о себе и статус,
+                          которые видны другим пользователям в разделе "Люди" -> "Пользователи".
+                      </p>
+                      <div class="card orange text-black text-center p-3 mt-2 mb-3 hoverable" style="width: auto">
+                            <blockquote class="blockquote mb-0 card_sides">
+                                <h4 class="card-title">Важно</h4>
+                                <p>Настоятельно просим Вас вводить настоящую информацию. Обязаны Вам сообщить,
+                                что при обнаружении неприемлемого контента, модераторы имеют право
+                                заблокировать Ваш аккаунт без возможности восстановления.</p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                        <cite>Все мы часть системы</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                      </div>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Мой профиль</p>
+                      <p class="doc_text">
+                          Чтобы посмотреть на Ваш профиль, Вам нужно в правой части
+                          сервисного окна нажать на Вашу аватарку (или стандартну), после появления возможности
+                          выбора разделов, необходимо нажать "Профиль".
+                      </p>
+                  </li>
+                  <li class="li_element">
+                      <p class="li_name">Другие пользователи</p>
+                      <p class="doc_text">
+                          Чтобы посмотреть профили других пользователей, Вам нужно перейти в раздел "Люди" -> "Пользователи".
+                          Там отображаются все пользователи нашего сервиса. Если кликнуть на ник пользователя, Вы перейдёте
+                          на страницу с более детальной информацией об этом человеке.
+                      </p>
+                  </li>
+              </ol>
+          </div>
+        </div>
+        <!-- конец блоков -->
+        <hr>
+
+      </div>
+    </div>
+<!-- Конец документации -->
+
+
+
+    <footer class="bg-light pb-5">
+      <br><br>
+      <div class="container text-center">
+        <p class="font-italic text-muted mb-0">&copy; Все права защищены 2020</p>
+      </div>
+    </footer>
+</body>
+</html>

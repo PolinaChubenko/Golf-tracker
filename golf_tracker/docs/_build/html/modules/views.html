@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="book-name"    content="golf_tracker"/>
+  <meta name="book-version" content=""/>
+  <meta name="book-release" content="1.0"/>
+  <meta name="book-type"    content="Manual"/>
+
+  
+  <title>Views &mdash; документация golf_tracker 1.0</title>
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/jquery-ui/jquery-ui.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/t3more.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="../genindex.html"/>
+        <link rel="search" title="Поиск" href="../search.html"/>
+    <link rel="top" title="документация golf_tracker 1.0" href="#"/>
+        <link rel="next" title="Models" href="models.html"/>
+        <link rel="prev" title="Welcome to golf_tracker’s documentation!" href="../index.html"/> 
+  <script src="../_static/js/modernizr.min.js"></script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        <ul class="sidebartop">
+
+          <li class="docsite">
+            <a href="https://docs.typo3.org"><img src="../_static/img/typo3-documentation.png" class="logo" /></a>
+          </li><li class="project">
+            <a href="../index.html">
+              golf_tracker<br>1.0</a>
+          </li>
+          <li class="nolink search"><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search this project" id="searchinput" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+</li></ul>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">golf_tracker</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    <li>Views</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/modules/views.rst.txt" rel="nofollow">
+                <span class="fa fa-binoculars"></span>&#32;View page source
+            </a>
+      </li>
+  </ul>
+  
+    <hr class="before-stealth-btn clear-both" />
+    
+      <a href="models.html" class="stealth-btn float-right" title="Accesskey Alt(+Shift)+n">
+          <span class="stealth-btn-text">Next</span>
+          <span class="fa fa-arrow-circle-right"></span>
+      </a>
+    
+    
+      <a href="../index.html" class="stealth-btn" title="Accesskey Alt(+Shift)+p">
+          <span class="fa fa-arrow-circle-left"></span>
+          <span class="stealth-btn-text">Previous</span>
+      </a>
+    
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody" class="toBeIndexed">
+            
+  <div class="section" id="module-personal_golf_tracker.views">
+<span id="views"></span><h1>Views<a class="headerlink" href="#module-personal_golf_tracker.views" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Программа для гольф трекера</p>
+<dl class="py function">
+<dt id="personal_golf_tracker.views.auth">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">auth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.auth" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Авторизация пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>переход на главную страницу</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.calendar">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">calendar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.calendar" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Создание календаря на любой месяц</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список с днями календаря</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.check_email">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">check_email</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.check_email" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Проверка существования почты в базе данных</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>True or False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.check_login">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">check_login</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.check_login" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Проверка существования логина при регистрации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>True or False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.create_training">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">create_training</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.create_training" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Создание тренировки пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.data_processing">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">data_processing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.data_processing" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Обработчик для разных типов данных, получаемых из базы данных</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – данные</p></li>
+<li><p><strong>t</strong> – тип данных</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>данные в корректном формате</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат главной страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>index.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs_genindex">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs_genindex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs_genindex" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат алфавитной страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>genindex.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs_models">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs_models" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат models страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>models.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs_py_modindex">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs_py_modindex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs_py_modindex" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>py-modindex.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs_search">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs_search</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs_search" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат поисковой страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>search.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.docs_views">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">docs_views</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.docs_views" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возрат views страницы документации</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>views.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.doted_date">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">doted_date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.doted_date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Преобразователь дат</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>date</strong> – дата</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>дата, которая нравится Полине</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.exit">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">exit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.exit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Выход из системы</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.filter_dates">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">filter_dates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">statistic_class</span></em>, <em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.filter_dates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Фильтрует даты, отсеивая сыгранные</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> – дата начала игры</p></li>
+<li><p><strong>end</strong> – дата конца игры</p></li>
+<li><p><strong>statistic_class</strong> – модель статистики</p></li>
+<li><p><strong>obj</strong> – класс игры</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список несыгранных дат</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_all_names">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_all_names</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_all_names" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение списка всех названий соревнований</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список названий соревнований</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_event">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_event</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_event" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение событий, запланированных на данный день</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список списков с данными о каждом соревновании</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_exist_days">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_exist_days</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_exist_days" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение дней, для которых была создана статистика</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список дней</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_games">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_games</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_games" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение всех соревнований пользоветеля</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список с названиями соревнований</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_global_games">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_global_games</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_global_games" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение данных о глобальных играх</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>1 - названия незарегистрированных глобальных игр пользователя</p>
+</dd>
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>2 - полные данные о незарегистрированных глобальных игр пользователя</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_html">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_html</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_html" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возвращает контент для главной страницы</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_local_games">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_local_games</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_local_games" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение данных локальных и собственных соревнований</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>1 - Названия локальных соревнований</p>
+</dd>
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>2 - Названия своих соревнований</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>3 - Даты проведения локальных соревнований</p>
+</dd>
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>4 - Даты проведения собственных соревнований</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_training_tasks">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_training_tasks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_training_tasks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение задач для тренировок</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список с задачами на каждый день</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.get_your_games">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">get_your_games</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.get_your_games" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение списка зарегистрированных пользователем игр и тренировок</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список с данными о играх пользователя</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.index">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.index" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возвращает стартовую страницу с авторизацией и регистрацией</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>index.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.is_super_user">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">is_super_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.is_super_user" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Проверка, является ли пользователь суперпользователем</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>id</strong> – id пользователя</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>True/False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.main_page">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">main_page</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.main_page" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возвращает основную страницу</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>main_page.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.new_game">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">new_game</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.new_game" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Создание локального соревнования для пользователя из глобального</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.news">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">news</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.news" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Анонс ближайших (на месяц) глобальных соревнований</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список списков с данными о каждом соревновании</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.reg">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">reg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.reg" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Регистрация пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.save_compit_statistic">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">save_compit_statistic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.save_compit_statistic" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сохранение статистики для своего соревнования</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.set_training_tasks">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">set_training_tasks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.set_training_tasks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сохранение задач тренировки</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.settings">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">settings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.settings" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сохранение настроек профиля пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.show_profile">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">show_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.show_profile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Отображение профиля игрока</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>полный профиль игрока (ФИО, логин, навык, статус,</p>
+</dd>
+</dl>
+<p>день рождения, родной город, дата регистрации, изображение профиля)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.show_statistics">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">show_statistics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.show_statistics" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сбор данных о статистике игр пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>словарь с данными формата: d = {«name»: {«date»: [[…], …, […]], …}, …}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.show_users">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">show_users</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.show_users" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Выводит список существующих пользователей</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список пользователей (ник, ФИО, id)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.views.your_new_game">
+<code class="sig-prename descclassname">personal_golf_tracker.views.</code><code class="sig-name descname">your_new_game</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.views.your_new_game" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Создание собственного соревнования</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>request</strong> – запрос</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div><!-- /.toBeIndexed -->
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="models.html" class="btn btn-neutral float-right" title="Accesskey Alt(+Shift)+n" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Accesskey Alt(+Shift)+p" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo" class="contentinfo">
+      <p class="show_source">
+        <a href="../_sources/modules/views.rst.txt" rel="nofollow">
+          <span class="fa fa-binoculars"></span>&#32;View page source
+        </a>
+      </p>
+      <p class="show_copyright">
+            &copy; Copyright 2020, Чубенко Полина, Антипов Владислав, Коновалов Константин, Соловьев Глеб
+      </p>
+      <p class="show_sphinx">
+        Built with <a href="http://sphinx-doc.org/" target="_blank">Sphinx</a> and
+        <a href="https://github.com/TYPO3-Documentation/t3SphinxThemeRtd" target="_blank">t3SphinxThemeRtd.</a>
+        Report theme issues <a href="https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues" target="_blank">here.</a>
+      </p>
+      <p class="show_legalinfo">
+        <a href="https://typo3.org/legal-info/" rel="nofollow">
+          <span class="fa fa-legal"></span>&#32;Legal Info
+        </a>
+      </p>
+
+
+
+
+  </div>
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery-ui/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../_static/js/theme.js"></script>
+      <script type="text/javascript" src="../_static/js/t3autocomplete.js"></script>
+
+  
+
+  
+   
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   <script type="text/javascript" id="idPiwikScriptPlaceholder"></script></body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+      {% load static %}
+        <link rel="stylesheet" href={% static "css/about_us.css" %} >
+        <link rel="stylesheet" href={% static "css/bootstrap.css" %} >
+</head>
+<body>
+
+<!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3" style="background-color: white;">
+      <div class="container">
+        <img style="margin-left: -10%;" src="{% static "imgs/logo_text.jpg"%}">
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="/main/?page=3" class="nav-link font-italic"> Домой </a></li>
+            <li class="nav-item active"><a href="/documentation/" class="nav-link font-italic"> Руководство пользователя</a></li>
+            <li class="nav-item active"><a href="/login-exit/" class="nav-link font-italic"> Выйти </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-light">
+      <div class="container py-5">
+        <div class="row h-100 align-items-center py-5">
+          <div class="col-lg-6">
+            <h1 class="display-4 title" style="color: #01a678;">О нас</h1>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block"><img src="{% static "/imgs/our_team.png"%}" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+<!-- Конец навигации -->
+
+
+    <div class="bg-white py-5">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-5 mx-auto"><img src="{% static "/imgs/about_second.png"%}" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+          <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+            <h2 class="font-weight-light" style="color: #1be139;">Зарождение</h2>
+            <p class="font-italic text-muted mb-4" style="font-size: 20px;">Начало нашего проекта было заложено благодаря МШП в ФизТехПарке и курсу "Промышленное программирование"</p>
+          </div>
+        </div><br><br><br><br>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+            <h2 class="font-weight-light" style="color: #1be139;">Цель</h2>
+            <p class="font-italic text-muted mb-4" style="font-size: 20px;">Помочь игрокам в гольф следить за статистикой своих игр, планировать соревнования, тренировки и самосовершенствоваться.</p>
+          </div>
+          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="{% static "/imgs/about_first.png" %}" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        </div>
+      </div>
+    </div>
+
+<!-- История развития -->
+    <h2 class="display-4 font-weight-light title text-center" style="font-size: 48px;" >История развития проекта</h2>
+    <p class="font-italic text-muted text-center">маленькие шажки на пути к успеху</p>
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Рождение проекта</span>
+            <span class="time-wrapper"><span class="time">Февраль 2020</span></span>
+          </div>
+          <div class="desc">Это одна из самых важный стадий из всех, так как иммено здесь родились идея и концепция. А еще было необходимо верно настроить проект для дальнейшей удобной работы, с чем мы успешно справились.</div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Важное решение</span>
+            <span class="time-wrapper"><span class="time">Март 2020</span></span>
+          </div>
+          <div class="desc">Так как наш сервис был задуман как одностроничный, то было необходимо для оптимизации перейти на AJAX и передавать данные через JSON.</div>
+        </div>
+      </li>
+
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Наполнение</span>
+            <span class="time-wrapper"><span class="time">Апрель 2020</span></span>
+          </div>
+          <div class="desc">Именно в этот момент происходило основное наполнение сервиса конентом. Так же происходила настройка media.</div>
+        </div>
+      </li>
+
+      <!-- Item 4 -->
+<!--      <li>-->
+<!--        <div class="direction-l">-->
+<!--          <div class="flag-wrapper">-->
+<!--            <span class="hexa"></span>-->
+<!--            <span class="flag">Переход на сервер</span>-->
+<!--            <span class="time-wrapper"><span class="time">Май 2020</span></span>-->
+<!--          </div>-->
+<!--          <div class="desc">Эта часть разработки была одной из самых сложных, так как потребовалось много времени на настройку ScaleWay сервера, S3 хранилища и полный переход на него.</div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+      <!-- Item 5 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Вектор движения</span>
+            <span class="time-wrapper"><span class="time">Будущее</span></span>
+          </div>
+          <div class="desc">На этом наша разработка не заканчивается. У нас много грандиозных планов по улучшению юзабильности сервиса. Так же мы всегда всегда рады обратной связи.</div>
+        </div>
+      </li>
+    </ul><br><br><br><br><br>
+<!-- Конец истории развития -->
+
+
+<!-- Наша команда -->
+    <div class="bg-light py-5">
+      <div class="container py-5">
+        <div class="row mb-4">
+          <div class="col-lg-5">
+            <h2 class="display-4 font-weight-light title" style="font-size: 48px;">Наша команда</h2>
+            <p class="font-italic text-muted">только вместе мы добиваемся успеха</p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          {% load static %}
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="card">
+              <div class="front">
+                  <div class="cover">
+                    <img src="{% static "/imgs/back_polina.jpg" %}"/>
+                  </div>
+                  <div class="user">
+                    <img class="img-circle" src="{% static "/imgs/Polina.png" %}"/>
+                  </div>
+                  <div class="content">
+                    <div class="main">
+                      <br>
+                      <div class="programmer">
+                        <h5 class="mb-0">Чубенко Полина</h5>
+                        <span class="small text-uppercase text-muted">Teamleader, <br>frontend developer</span>
+                      </div>
+                      <hr>
+                      <p class="text-center quote">"Если делать, то только качественно"</p>
+                      <hr>
+                    </div>
+                    <div class="footer">
+                      <div class="mt-2"><a class="email" href="mailto: polina270602@yandex.ru">polina270602@yandex.ru</a>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- End-->
+
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="card">
+              <div class="front">
+                  <div class="cover">
+                    <img src="{% static "imgs/back_vlad.jpg" %}"/>
+                  </div>
+                  <div class="user">
+                    <img class="img-circle" src="{% static "imgs/Vlad.png" %}">
+                  </div>
+                  <div class="content">
+                    <div class="main">
+                      <br>
+                      <div class="programmer">
+                        <h5 class="mb-0">Антипов Влад</h5><span class="small text-uppercase text-muted">Main backend developer, frontend developer</span>
+                      </div>
+                        <hr>
+                      <p class="text-center quote">"Это ни в коем случае не баг, это офигенная фича"</p>
+                      <hr>
+                    </div>
+                    <div class="footer">
+                      <div class="mt-2"><a class="email" href="mailto: sonkib1@gmail.com">sonkib1@gmail.com</a>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- End-->
+
+        </div>
+      </div>
+    </div>
+<!-- Конец нашей команды -->
+
+    <footer class="bg-light pb-5">
+      <div class="container text-center">
+        <p class="font-italic text-muted mb-0">&copy; Все права защищены 2020</p>
+      </div>
+    </footer>
+</body>
+</html>

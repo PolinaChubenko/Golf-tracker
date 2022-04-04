@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="book-name"    content="golf_tracker"/>
+  <meta name="book-version" content=""/>
+  <meta name="book-release" content="1.0"/>
+  <meta name="book-type"    content="Manual"/>
+
+  
+  <title>Models &mdash; документация golf_tracker 1.0</title>
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/jquery-ui/jquery-ui.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/t3more.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="../genindex.html"/>
+        <link rel="search" title="Поиск" href="../search.html"/>
+    <link rel="top" title="документация golf_tracker 1.0" href="#"/>
+        <link rel="prev" title="Views" href="views.html"/> 
+  <script src="../_static/js/modernizr.min.js"></script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        <ul class="sidebartop">
+
+          <li class="docsite">
+            <a href="https://docs.typo3.org"><img src="../_static/img/typo3-documentation.png" class="logo" /></a>
+          </li><li class="project">
+            <a href="../index.html">
+              golf_tracker<br>1.0</a>
+          </li>
+          <li class="nolink search"><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search this project" id="searchinput" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+</li></ul>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="views.html">Views</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Models</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">golf_tracker</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    <li>Models</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/modules/models.rst.txt" rel="nofollow">
+                <span class="fa fa-binoculars"></span>&#32;View page source
+            </a>
+      </li>
+  </ul>
+  
+    <hr class="before-stealth-btn clear-both" />
+    
+    
+      <a href="views.html" class="stealth-btn" title="Accesskey Alt(+Shift)+p">
+          <span class="fa fa-arrow-circle-left"></span>
+          <span class="stealth-btn-text">Previous</span>
+      </a>
+    
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody" class="toBeIndexed">
+            
+  <div class="section" id="module-personal_golf_tracker.models">
+<span id="models"></span><h1>Models<a class="headerlink" href="#module-personal_golf_tracker.models" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py class">
+<dt id="personal_golf_tracker.models.Coaches">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">Coaches</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Coaches" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Модель с тренерами и их учениками</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Coaches.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Coaches.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.coach">
+<code class="sig-name descname">coach</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.coach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Тренер</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.coach_id">
+<code class="sig-name descname">coach_id</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.coach_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.Coaches.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.trainee">
+<code class="sig-name descname">trainee</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.trainee" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Ученик</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Coaches.trainee_id">
+<code class="sig-name descname">trainee_id</code><a class="headerlink" href="#personal_golf_tracker.models.Coaches.trainee_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.GlobalCompetitions">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">GlobalCompetitions</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Модель с глобальными соревнованиями</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.game_coordinates">
+<code class="sig-name descname">game_coordinates</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.game_coordinates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Место проведения соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.game_end">
+<code class="sig-name descname">game_end</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.game_end" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата конца соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.game_name">
+<code class="sig-name descname">game_name</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.game_name" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Название соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.game_start">
+<code class="sig-name descname">game_start</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.game_start" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата начала соревнования</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.get_comp">
+<em class="property">static </em><code class="sig-name descname">get_comp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.get_comp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение глобального соревнования по названию</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>n</strong> – название</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>глобальное соревнование</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.localcompetitions_set">
+<code class="sig-name descname">localcompetitions_set</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.localcompetitions_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.map">
+<code class="sig-name descname">map</code><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.map" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Карта места проведения</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.GlobalCompetitions.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.GlobalCompetitions.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.LocalCompetitions">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">LocalCompetitions</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Модель хранение локальных соревнований</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.LocalCompetitions.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.LocalCompetitions.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.g_competition">
+<code class="sig-name descname">g_competition</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.g_competition" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Глобальное соревнование</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.g_competition_id">
+<code class="sig-name descname">g_competition_id</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.g_competition_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.LocalCompetitions.get_all_comps">
+<em class="property">static </em><code class="sig-name descname">get_all_comps</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.get_all_comps" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение всех локальных соревнований пользователя</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>u</strong> – id пользователя</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список локальных соревнований</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.LocalCompetitions.get_comp">
+<em class="property">static </em><code class="sig-name descname">get_comp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.get_comp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение локального соревнования по названию</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u</strong> – id пользователя</p></li>
+<li><p><strong>n</strong> – название глобального соревнования</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>локальное соревнование</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.LocalCompetitions.get_events">
+<em class="property">static </em><code class="sig-name descname">get_events</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.get_events" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Словарь с датами и соревнованиями, проходящими в этот день</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>u_id</strong> – id пользователя</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>{«date»: [„names_of_competition“]}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.result">
+<code class="sig-name descname">result</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.result" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Результат соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.statistics_of_competitions_set">
+<code class="sig-name descname">statistics_of_competitions_set</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.statistics_of_competitions_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.user" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Пользователь</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.LocalCompetitions.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#personal_golf_tracker.models.LocalCompetitions.user_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.OwnCompetitions">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">OwnCompetitions</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Модель с собственными соревнованиями</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.OwnCompetitions.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.OwnCompetitions.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.game_coordinates">
+<code class="sig-name descname">game_coordinates</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.game_coordinates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Место проведения соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.game_end">
+<code class="sig-name descname">game_end</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.game_end" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата конца соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.game_name">
+<code class="sig-name descname">game_name</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.game_name" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Название соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.game_start">
+<code class="sig-name descname">game_start</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.game_start" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата начала соревнования</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.OwnCompetitions.get_all_comps">
+<em class="property">static </em><code class="sig-name descname">get_all_comps</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.get_all_comps" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.OwnCompetitions.get_comp">
+<em class="property">static </em><code class="sig-name descname">get_comp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.get_comp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Возвращает собственное соревнование по названию</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u</strong> – id пользователя</p></li>
+<li><p><strong>n</strong> – название соревнования</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>собственное соревнование</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.OwnCompetitions.get_events">
+<em class="property">static </em><code class="sig-name descname">get_events</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.get_events" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Словарь с датами и соревнованиями, проходящими в этот день</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>u_id</strong> – id пользователя</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>{«date»: [„names_of_competition“]}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.map">
+<code class="sig-name descname">map</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.map" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Карта места проведения</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.result">
+<code class="sig-name descname">result</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.result" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Результат соревнования</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.statistics_of_own_competitions_set">
+<code class="sig-name descname">statistics_of_own_competitions_set</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.statistics_of_own_competitions_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.user" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Пользователь</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.OwnCompetitions.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#personal_golf_tracker.models.OwnCompetitions.user_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">Statistics_of_competitions</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Статистика по локальному соревнованию</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.competition">
+<code class="sig-name descname">competition</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.competition" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Локальное соревнование</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.competition_id">
+<code class="sig-name descname">competition_id</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.competition_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>День игры</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.eight">
+<code class="sig-name descname">eight</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.eight" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 8</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.eighteen">
+<code class="sig-name descname">eighteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.eighteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 18</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.eleven">
+<code class="sig-name descname">eleven</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.eleven" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 11</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.fifteen">
+<code class="sig-name descname">fifteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.fifteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 15</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.five">
+<code class="sig-name descname">five</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.five" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 5</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.four">
+<code class="sig-name descname">four</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.four" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 4</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.fourteen">
+<code class="sig-name descname">fourteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.fourteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 14</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.get_dates">
+<em class="property">static </em><code class="sig-name descname">get_dates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.get_dates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение сыгранных дней</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>lc</strong> – локальное соревнование</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>список с сыгранными днями</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.get_info_by_date">
+<em class="property">static </em><code class="sig-name descname">get_info_by_date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d</span></em>, <em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">u</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.get_info_by_date" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.is_eighteen">
+<code class="sig-name descname">is_eighteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.is_eighteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>18 ли лунок в игре</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.nine">
+<code class="sig-name descname">nine</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.nine" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 9</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.one">
+<code class="sig-name descname">one</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.one" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.seven">
+<code class="sig-name descname">seven</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.seven" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 7</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.seventeen">
+<code class="sig-name descname">seventeen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.seventeen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 17</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.six">
+<code class="sig-name descname">six</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.six" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 6</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.sixteen">
+<code class="sig-name descname">sixteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.sixteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 16</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.sum">
+<code class="sig-name descname">sum</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.sum" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Итог для каждого параметра</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.ten">
+<code class="sig-name descname">ten</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.ten" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 10</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.thirteen">
+<code class="sig-name descname">thirteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.thirteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 13</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.three">
+<code class="sig-name descname">three</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.three" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.twelve">
+<code class="sig-name descname">twelve</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.twelve" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 12</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_competitions.two">
+<code class="sig-name descname">two</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_competitions.two" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">Statistics_of_own_competitions</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Статистика по локальному соревнованию</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.competition">
+<code class="sig-name descname">competition</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.competition" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Локальное соревнование</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.competition_id">
+<code class="sig-name descname">competition_id</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.competition_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>День игры</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.eight">
+<code class="sig-name descname">eight</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.eight" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 8</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.eighteen">
+<code class="sig-name descname">eighteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.eighteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 18</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.eleven">
+<code class="sig-name descname">eleven</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.eleven" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 11</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.fifteen">
+<code class="sig-name descname">fifteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.fifteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 15</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.five">
+<code class="sig-name descname">five</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.five" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 5</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.four">
+<code class="sig-name descname">four</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.four" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 4</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.fourteen">
+<code class="sig-name descname">fourteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.fourteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 14</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.get_dates">
+<em class="property">static </em><code class="sig-name descname">get_dates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ow</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.get_dates" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.get_info_by_date">
+<em class="property">static </em><code class="sig-name descname">get_info_by_date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d</span></em>, <em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">u</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.get_info_by_date" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.is_eighteen">
+<code class="sig-name descname">is_eighteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.is_eighteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>18 ли лунок в игре</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.nine">
+<code class="sig-name descname">nine</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.nine" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 9</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.one">
+<code class="sig-name descname">one</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.one" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.seven">
+<code class="sig-name descname">seven</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.seven" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 7</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.seventeen">
+<code class="sig-name descname">seventeen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.seventeen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 17</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.six">
+<code class="sig-name descname">six</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.six" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 6</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.sixteen">
+<code class="sig-name descname">sixteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.sixteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 16</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.sum">
+<code class="sig-name descname">sum</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.sum" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Итог для каждого параметра</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.ten">
+<code class="sig-name descname">ten</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.ten" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 10</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.thirteen">
+<code class="sig-name descname">thirteen</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.thirteen" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 13</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.three">
+<code class="sig-name descname">three</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.three" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.twelve">
+<code class="sig-name descname">twelve</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.twelve" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 12</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Statistics_of_own_competitions.two">
+<code class="sig-name descname">two</code><a class="headerlink" href="#personal_golf_tracker.models.Statistics_of_own_competitions.two" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Поле 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.Trainings">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">Trainings</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Trainings" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Тренировки пользователей</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Trainings.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.Trainings.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата тренировки</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.game_coordinates">
+<code class="sig-name descname">game_coordinates</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.game_coordinates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Место проведения тренировки</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Trainings.get_all_information">
+<em class="property">static </em><code class="sig-name descname">get_all_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Trainings.get_all_information" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.list_of_tasks">
+<code class="sig-name descname">list_of_tasks</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.list_of_tasks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Список задач пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.name" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Название тренировки</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.Trainings.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.solved_tasks">
+<code class="sig-name descname">solved_tasks</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.solved_tasks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.Trainings.update_information">
+<em class="property">static </em><code class="sig-name descname">update_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em>, <em class="sig-param"><span class="n">info</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.Trainings.update_information" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.user" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Пользователь</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.Trainings.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#personal_golf_tracker.models.Trainings.user_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="personal_golf_tracker.models.UserData">
+<em class="property">class </em><code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">UserData</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.UserData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дополнительная информация о пользователе</p>
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.UserData.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt id="personal_golf_tracker.models.UserData.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.bio">
+<code class="sig-name descname">bio</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.bio" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Краткая биографии пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.city_from">
+<code class="sig-name descname">city_from</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.city_from" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Родной город пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.coaches_set">
+<code class="sig-name descname">coaches_set</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.coaches_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.date_of_birth">
+<code class="sig-name descname">date_of_birth</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.date_of_birth" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дата рождения пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.is_coach">
+<code class="sig-name descname">is_coach</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.is_coach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Является ли данный пользователь тренером</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#personal_golf_tracker.models.UserData.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.photo">
+<code class="sig-name descname">photo</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.photo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Фотография профиля</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="personal_golf_tracker.models.UserData.return_field">
+<em class="property">static </em><code class="sig-name descname">return_field</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em>, <em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.UserData.return_field" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Получение данных о пользователе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u</strong> – id пользователя</p></li>
+<li><p><strong>f</strong> – название поля</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>данные</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.skill">
+<code class="sig-name descname">skill</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.skill" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Гандикап пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.status">
+<code class="sig-name descname">status</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.status" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Статус пользователя</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.user" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Id пользователя из основной таблицы</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="personal_golf_tracker.models.UserData.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#personal_golf_tracker.models.UserData.user_id" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="personal_golf_tracker.models.create_user_profile">
+<code class="sig-prename descclassname">personal_golf_tracker.models.</code><code class="sig-name descname">create_user_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sender</span></em>, <em class="sig-param"><span class="n">instance</span></em>, <em class="sig-param"><span class="n">created</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#personal_golf_tracker.models.create_user_profile" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div><!-- /.toBeIndexed -->
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="views.html" class="btn btn-neutral" title="Accesskey Alt(+Shift)+p" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo" class="contentinfo">
+      <p class="show_source">
+        <a href="../_sources/modules/models.rst.txt" rel="nofollow">
+          <span class="fa fa-binoculars"></span>&#32;View page source
+        </a>
+      </p>
+      <p class="show_copyright">
+            &copy; Copyright 2020, Чубенко Полина, Антипов Владислав, Коновалов Константин, Соловьев Глеб
+      </p>
+      <p class="show_sphinx">
+        Built with <a href="http://sphinx-doc.org/" target="_blank">Sphinx</a> and
+        <a href="https://github.com/TYPO3-Documentation/t3SphinxThemeRtd" target="_blank">t3SphinxThemeRtd.</a>
+        Report theme issues <a href="https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues" target="_blank">here.</a>
+      </p>
+      <p class="show_legalinfo">
+        <a href="https://typo3.org/legal-info/" rel="nofollow">
+          <span class="fa fa-legal"></span>&#32;Legal Info
+        </a>
+      </p>
+
+
+
+
+  </div>
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery-ui/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../_static/js/theme.js"></script>
+      <script type="text/javascript" src="../_static/js/t3autocomplete.js"></script>
+
+  
+
+  
+   
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   <script type="text/javascript" id="idPiwikScriptPlaceholder"></script></body>
+</html>

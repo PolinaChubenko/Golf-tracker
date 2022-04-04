@@ -1,0 +1,146 @@
+
+.list-step {
+  counter-reset: step;
+  width: 300px;
+}
+.slide {
+  position: relative;
+  width: 800px;
+  margin: 20px auto 0;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #34495e;
+  overflow: hidden;
+}
+.main_input {
+  display: none;
+}
+.main_input:checked + .main_label {
+  background-color: #0b5778;
+}
+.main_input:checked + .main_label:after {
+  border-left-color: #0b5778;
+}
+.main_input:checked ~ .img-wrapper {
+  margin-left: 0;
+}
+.main_label {
+  counter-increment: step;
+  position: relative;
+  display: table;
+  height: 80px;
+  padding: 5px;
+  background: #0e709a;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  -webkit-transition-property: color, background;
+  transition-property: color, background;
+}
+.main_label:after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 40px solid #0e709a;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  -webkit-transition: border 0.3s ease-out;
+  transition: border 0.3s ease-out;
+}
+.main_label:before {
+  content: '0' counter(step);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px;
+}
+.inner p,
+.inner .fa {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.inner p {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.inner .img-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 300px;
+  right: 0;
+  margin-left: -100%;
+  -webkit-transition: margin 0.8s ease-out;
+  transition: margin 0.8s ease-out;
+}
+.inner .img-wrapper img {
+  max-width: 100%;
+}
+
+
+
+
+/**
+ * Horizontal Type Line Behind Text
+ * Inspired by this discussion @ CSS-Tricks: https://css-tricks.com/forums/topic/css-trick-for-a-horizontal-type-line-behind-text/#post-151970
+ * Available on jsFiddle: http://jsfiddle.net/ericrasch/jAXXA/
+ * Available on Dabblet: http://dabblet.com/gist/2045198
+ * Available on GitHub Gist: https://gist.github.com/2045198
+ */
+h2 {
+  font: 28px sans-serif;
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.background {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1%;
+}
+h2.background:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+}
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+h2.double:after {
+  border-bottom: 1px solid blue;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  -moz-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: -1;
+}
+

@@ -1,0 +1,25 @@
+<div class="tasks_header" style="margin-bottom: 1%;">Все запланированные игры</div>
+<input class="form-control" type="text" placeholder="Поиск игр по названию, месту или датам" id="search-game" onkeyup="tableSearch('search-game','games_table')"><br>
+<table class="table table-striped" id="games_table" style="display:none;">
+    <thead style="background-color: #196625; color: #dfe9e9;">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" style="width: 35%;">Название</th>
+          <th scope="col" style="width: 21%;">Место</th>
+          <th scope="col" style="width: 22%;">Дата начала</th>
+          <th scope="col" style="width: 22%;">Дата конца</th>
+        </tr>
+    </thead>
+    <tbody id="info">
+
+    </tbody>
+</table>
+
+<div class="row" id="no_games_table" style="display:none;">
+    <div class="col-12 text-center logo">
+        <br>
+        <span class="big_logo">\(o_o)/</span><br>
+        <span class="text_logo">Похоже, что у Вас нет игр</span><br>
+        <span class="text_logo">Запланируйте игру и она здесь появится</span><br><br>
+    </div>
+</div>

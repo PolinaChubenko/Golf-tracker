@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+                <div class="card mb-3 profile_card" style="max-width: 30rem; min-width: 30rem;">
+                <table class="hk-calendar">
+                <caption class="hk-calendar__caption">
+                    <button id="prev_month" onclick="get_prev_month();" class="hk-calendar__caption-ctrl -previous hk-left hk-reset--button" title="Go to previous month">◀</button>
+
+                    <button id="next_moth" onclick="get_next_month();" class="hk-calendar__caption-ctrl -next hk-right hk-reset--button" title="Go to next month">▶</button>
+                </caption>
+                <thead>
+                <p id="month_year_p" class=""></p>
+                    <tr class="hk-calendar__days hk-calendar__row">
+                        <th class="hk-calendar__day">Пн</th>
+                        <th class="hk-calendar__day">Вт</th>
+                        <th class="hk-calendar__day">Ср</th>
+                        <th class="hk-calendar__day">Чт</th>
+                        <th class="hk-calendar__day">Пт</th>
+                        <th class="hk-calendar__day">Сб</th>
+                        <th class="hk-calendar__day">Вс</th>
+                    </tr>
+                </thead>
+                <tbody class="calendar_block" id="calendar">
+                    <tr class="hk-calendar__dates hk-calendar__row">
+                        <td class="hk-calendar__date previous-month">
+                            <a href="#" class="hk-calendar__date-link -disabled"></a>
+                        </td>
+                        <td class="hk-calendar__date">
+                            <a href="#" class="hk-calendar__date-link"></a>
+                        </td>
+                        <td class="hk-calendar__date next-month">
+                            <a href="#" class="hk-calendar__date-link -disabled"></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+        </div>
+
+        <div class="col" id="day_event">
+        <div>
+
+    </div>
+</div>

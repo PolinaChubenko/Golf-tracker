@@ -1,0 +1,43 @@
+.green{
+  background-color: #b2ffbe !important;
+}
+
+.orange{
+  background-color: #ffbeb2 !important;
+}
+
+.card_sides{
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.title {
+  font-family: fantasy;
+}
+
+.nav_link {
+  font-size: 20px;
+  color: #744BD8 !important;
+}
+
+.nav_link:focus, .nav_link:hover, .nav_link:active,{
+  text-decoration: none;
+  color: #452d81 !important;
+}
+
+.li_element{
+  font-size: 20px;
+  margin: 3%;
+}
+
+.li_name{
+  text-decoration: underline !important;
+}
+
+.blockquote, .doc_text{
+  font-size: 18px !important;
+}
+
+cite{
+  font-size: 14px !important;
+}

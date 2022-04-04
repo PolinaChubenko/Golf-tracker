@@ -1,0 +1,54 @@
+<div class="card mb-3 profile_card" style="padding: 10px; height: 100%;">
+    <h4 class="cards_h4">Игры из глобального списка</h4>
+    <span class="cards_span">выберите игру из списка, чтобы добавить ее в календарь</span>
+    <div class="row">
+            <div class="container" style="text-align: center; margin-top: 1%;">
+                <br>
+                <div class="row" style="height: 100%;">
+                    <div class="col-5" style="padding-top: 3%;">
+                        <select id="game_selector" class="game_selector_cg" onchange="get_info_about_global_game();"></select>
+                        <div class="row">
+                                <div class="col-7" style="padding-top: 7px; text-align: end;">
+                                        <p>Место проведения: </p>
+                                        <p>Дата начала игры: </p>
+                                        <p>Дата окончания игры: </p>
+                                </div>
+                                <div class="col" style="padding-top: 7px; text-align: start;">
+                                        <p id="coordinates"></p>
+                                        <p id="game-start"></p>
+                                        <p id="game-finish"></p>
+                                </div>
+                        </div>
+                        <button  class="classic_button" style="margin-top: 1%;" type="submit" onclick="save_game();">Добавить игру</button>
+                    </div>
+                    <div class="col">
+                        <div id="YMapsGlob" style="height: 95%; width: 95%; max-width: 445px; max-height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+<br>
+<div class="card mb-3 profile_card" style="padding: 7px;">
+    <h4 class="cards_h4">Мои игры</h4>
+    <span class="cards_span">запланируйте свою игру и она появиться у вас в списке игр</span>
+    <div class="container" style="text-align: center;">
+        <br>
+        <div class="row">
+                <div class="col-4" style="padding-top: 7px; text-align: end;">
+                        <p>Название игры: </p>
+                        <p>Место проведения: </p>
+                        <p>Дата начала игры: </p>
+                        <p>Дата окончания игры: </p>
+                </div>
+                <div class="col" style="text-align: start;">
+                        <input id="name" class="create_game_input" style="width: 70%;" type="text" autocomplete="off">
+                        <input id="place" class="create_game_input" style="width: 70%;" type="text" autocomplete="off">
+                        <input id="start" class="create_game_input" style="width: 70%;" type="date" autocomplete="off">
+                        <input id="end" class="create_game_input" style="width: 70%;" type="date" autocomplete="off">
+                </div>
+        </div>
+        <button  class="classic_button" style="margin-top: 5px;" type="submit" onclick="save_your_game();">Добавить игру</button>
+    </div>
+</div>

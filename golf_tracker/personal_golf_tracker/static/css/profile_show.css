@@ -1,0 +1,101 @@
+.profile-pic_show {
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 200px;
+    margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.button_container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 64px;
+    padding-top: 10px;
+}
+
+.add_friend{
+    width: 220px;
+    outline: none !important;
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background: #ff5d40;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
+}
+
+.request_sent{
+    width: 220px;
+    outline: none !important;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    background: #cccccc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
+}
+
+.your_friend{
+    width: 220px;
+    outline: none !important;
+    border-radius: 20px;
+    border: 1px solid #40ff5d;
+    background: #53ff6d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
+}
+
+.initials{
+    font-size: 1.5rem;
+    color: #e54326;
+}
+
+.profile_card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-color: none !important;
+}
+
+.status {
+    font-size: 0.9rem;
+}
+
+.selectors{
+    text-align: right;
+    color: #ff816a;
+}
+
+
+.marker {
+    list-style-type: none;
+    padding: 3px 10px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    min-height: 31px;
+}
+
+.no-padding {
+    padding: 0 !important;
+    max-height: 31px;
+}

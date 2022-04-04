@@ -1,0 +1,46 @@
+<div class="right-bar">
+    <div class="top-part">
+
+      <div onclick="myFunction();" class="dropdown">
+        <div class="dropbtn btn_show_settings">
+            <div  id="avatar_img_in_bar" class="profile_pic btn_show_settings" alt="member"></div>
+          <label class="profile_label">
+            <svg id= "profile_down" style=" margin-right: 0; color: #3c3c3c;" class="btn_show_settings bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3.646 6.646a.5.5 0 01.708 0L10 12.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"></path>
+            </svg>
+            <svg id= "profile_up" style="display: none; margin-right: 0; color: #3c3c3c;" class="btn_show_settings bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M9.646 6.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L10 7.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z" clip-rule="evenodd"></path>
+            </svg>
+          </label>
+        </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="show_profile({{user_id}});" style="cursor: pointer;">Профиль</a>
+            <a onclick="set_profile();" style="cursor: pointer;">Настройки</a>
+            <div class="dropdown-divider" style="margin: .1rem 0 !important;"></div>
+            <a href="/login-exit/" id="logout_selection">Выйти</a>
+          </div>
+        </div>
+
+      <a href="/documentation/" style="margin-bottom: 5%;">
+        <svg class="logout help_icon bi bi-question-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+        </svg>
+      </a>
+
+      <a href="/login-exit/" style="margin-bottom: 5%;">
+        <svg class="logout help_icon bi bi-power" style="width: 27px !important; height: 27px !important;" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M5.578 4.437a5 5 0 104.922.044l.5-.866a6 6 0 11-5.908-.053l.486.875z" clip-rule="evenodd"/>
+          <path fill-rule="evenodd" d="M7.5 8V1h1v7h-1z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+
+
+    </div>
+
+    <div class="header">В этом месяце</div>
+    <div class="right-content" id="news">
+
+    </div>
+
+</div>

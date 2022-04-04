@@ -1,0 +1,29 @@
+<div class="card mb-3 profile_card" style="padding: 7px; margin-top: 3%;">
+    <h4 class="cards_h4">Мои тренировки</h4>
+    <span class="cards_span">запланируйте тренировку, выберите место на карте, а потом выполняйте поставленные задачи</span>
+    <div class="row">
+        <div class="container" style="text-align: center;">
+            <br>
+            <div class="row">
+                    <div class="col-5" style="padding-top: 7px; text-align: end;">
+                            <p>Назовите тренировку: </p>
+                            <p>Место проведения: </p>
+                            <p>Дата тренировки: </p>
+                    </div>
+                    <div class="col" style="text-align: start;">
+                            <input id="name" class="create_game_input" style="width: 70%;" type="text" autocomplete="off">
+                            <input id="coordinates" class="create_game_input" style="width: 70%;" type="text" autocomplete="off">
+                            <input id="game-date" class="create_game_input" style="width: 70%;" type="date" autocomplete="off">
+                    </div>
+            </div>
+            <h5 class="cards_h4" style="color: #207f2e; margin-top: 2%;">
+                Создайте задачи
+                <button class="add_field_button add_inputs" onclick="add_task();">+</button>
+            </h5>
+            <div class="input_fields_wrap" id="task_fields">
+                <div><input class="create_task_input" style="margin-right: 1%;" type="text" name="mytext[]"></div>
+            </div>
+            <button  class="classic_button" style="margin-top: 5px;" type="submit" onclick="save_training();">Добавить тренировку</button>
+        </div>
+    </div>
+</div>

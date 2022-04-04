@@ -1,0 +1,266 @@
+<div class="card mb-3 profile_card" style="padding: 10px; min-height: 400px; overflow-y: auto; flex: 1;">
+    <h4 class="cards_h4">Создайте статистику своей игры</h4>
+    <span class="cards_span">статистику можно создавать только на запланированные в календаре игры</span>
+    <div class="container">
+        <div class="row" id="no_games_for_st_table" style="display:none;">
+            <div class="col-12 text-center logo">
+                <br>
+                <span class="big_logo">\(o_o)/</span><br>
+                <span class="text_logo">Похоже, что у Вас нет игр или все игры уже со статистикой</span><br>
+                <span class="text_logo">Запланируйте игру и она здесь появится</span><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col">
+                        <div id="statistic_second_question" class="">
+                            <p class="inline__block">Выберите игру из списка:</p>
+                            <div class="button inline__block">
+                                <div id="game_selection"></div>
+                            </div>
+                        </div>
+
+                        <div id="statistic_second_question_addition" style="">
+                            <p class="inline__block">Выберите дату из списка:</p>
+
+                            <div class="button inline__block">
+                                <div id="date_selection"></div>
+                            </div>
+                        </div>
+                        <div id="statistic_fourth_question">
+                            <p class="inline__block">Количество сыгранных лунок:</p>
+                            <div class="inline__block">
+                                <label class="radio-button">
+                                      <input type="radio" name="radio" name="inlineRadioOptions" id="nine_button" onclick="show_one_nine();" value="9" checked="checked">
+                                      <span class="label-visible" for="nine_button">
+                                        <span class="fake-radiobutton"></span>
+                                          <strong>9</strong>
+                                      </span>
+                                    </label>
+
+                                    <label class="radio-button">
+                                      <input type="radio" name="radio" name="inlineRadioOptions" id="eighteen_button" onclick="show_two_nine();" value="18">
+                                      <span class="label-visible" for="eighteen_button">
+                                        <span class="fake-radiobutton"></span>
+                                          <strong>18</strong>
+                                      </span>
+                                    </label>
+                            </div>
+                        </div>
+                </div>
+                <div class="col">
+                </div>
+        </div>
+
+
+
+        <div id="first_nine">
+            <table class="table table-sm">
+                <thead style="background-color: #196625; color: #dfe9e9;">
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">1</th>
+                        <th scope="col">2</th>
+                        <th scope="col">3</th>
+                        <th scope="col">4</th>
+                        <th scope="col">5</th>
+                        <th scope="col">6</th>
+                        <th scope="col">7</th>
+                        <th scope="col">8</th>
+                        <th scope="col">9</th>
+                        <th scope="col">sum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="fairway_tr_nine" onclick="count_fairways();">
+                        <th scope="row">Fairway</th>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td><input class="fairway_nine checkbox" type="checkbox"></td>
+                        <td id="fairway_sum">0</td>
+                    </tr>
+                    <tr id="green_tr_nine" onclick="count_greens();">
+                        <th scope="row">Green Regulation</th>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td><input class="green_nine checkbox" type="checkbox"></td>
+                        <td id="green_sum">0</td>
+                    </tr>
+                    <tr id="updown_tr_nine" onclick="count_updowns();">
+                        <th scope="row">Up & Down</th>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td><input class="updown_nine checkbox" type="checkbox"></td>
+                        <td id="updown_sum">0</td>
+                    </tr>
+                    <tr id="putting_tr_nine" onclick="count_puttings();"">
+                        <th scope="row">Putting</th>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(1);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(2);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(3);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(4);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(5);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(6);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(7);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(8);"></td>
+                        <td><input class="input__number putting_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(9);"></td>
+                        <td id="putting_sum">0</td>
+                    </tr>
+                    <tr id="shots_tr_nine" onclick="count_shots();">
+                        <th scope="row">Shots</th>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(10);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(11);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(12);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(13);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(14);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(15);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(16);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(17);"></td>
+                        <td><input class="input__number shots_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(18);"></td>
+                        <td id="shots_sum">0</td>
+                    </tr>
+                    <tr id="par_tr_nine" onclick="count_pars();">
+                        <th scope="row">Par</th>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(19);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(20);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(21);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(22);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(23);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(24);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(25);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(26);"></td>
+                        <td><input class="input__number par_nine no_arrows" type="number" min="0" max="9" onKeyDown="cutter(27);"></td>
+                        <td id="par_sum">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="divs_statistic" id="second_nine">
+            <table class="table table-sm">
+                <thead style="background-color: #196625; color: #dfe9e9;">
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">10</th>
+                        <th scope="col">11</th>
+                        <th scope="col">12</th>
+                        <th scope="col">13</th>
+                        <th scope="col">14</th>
+                        <th scope="col">15</th>
+                        <th scope="col">16</th>
+                        <th scope="col">17</th>
+                        <th scope="col">18</th>
+                        <th scope="col">sum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="fairway_tr_eighteen" onclick="count_fairways_two();">
+                        <th scope="row">Fairway</th>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="fairway_eighteen checkbox" type="checkbox"></td>
+                        <td id="fairway_sum_second">0</td>
+                    </tr>
+                    <tr id="green_tr_eighteen" onclick="count_greens_two();">
+                        <th scope="row">Green Regulation</th>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="green_eighteen checkbox" type="checkbox"></td>
+                        <td id="green_sum_second">0</td>
+                    </tr>
+                    <tr id="updown_tr_eighteen" onclick="count_updowns_two();">
+                        <th scope="row">Up & Down</th>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td><input class="updown_eighteen checkbox" type="checkbox"></td>
+                        <td id="updown_sum_second">0</td>
+                    </tr>
+                    <tr id="putting_tr_eighteen" onclick="count_puttings_two();">
+                        <th scope="row">Putting</th>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(28);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(29);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(30);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(31);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(32);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(33);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(34);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(35);"></td>
+                        <td><input class="input__number putting_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(36);"></td>
+                        <td id="putting_sum_second">0</td>
+                    </tr>
+                    <tr id="shots_tr_eighteen" onclick="count_shots_two();">
+                        <th scope="row">Shots</th>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(37);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(38);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(39);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(40);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(41);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(42);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(43);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(44);"></td>
+                        <td><input class="input__number shots_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(45);"></td>
+                        <td id="shots_sum_second">0</td>
+                    </tr>
+                    <tr id="par_tr_eighteen" onclick="count_pars_two();">
+                        <th scope="row">Par</th>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(46);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(47);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(48);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(49);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(50);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(51);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(52);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(53);"></td>
+                        <td><input class="input__number par_eighteen no_arrows" type="number" min="0" max="9" onKeyDown="cutter(54);"></td>
+                        <td id="par_sum_second">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="final_result">
+            <p>Конечный результат: </p>
+            <p id="result">0</p>
+            <!-----конечный результат нужно сохранять --->
+        </div>
+
+        <div id="save_statistics_div">
+            <button class="classic_button" onclick="save_competition_statistic();"> Сохранить статистику</button>
+        </div>
+    </div>
+</div>
