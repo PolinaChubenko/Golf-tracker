@@ -28,9 +28,10 @@
 
 - Далее перейдите в приложение golf_traker: ```cd golf_tracker/```
 
-- Накатите все необходимые миграции:
-    - ```python manage.py makemigrations```
-    - ```python manage.py migrate```
+- Загрузите статику и накатите все необходимые миграции:
+    - ```python3 manage.py collectstatic``` 
+    - ```python3 manage.py makemigrations```
+    - ```python3 manage.py migrate```
 
 - Для запуска на 8080 порту выполните: ```python3 manage.py runserver 8080```
 
